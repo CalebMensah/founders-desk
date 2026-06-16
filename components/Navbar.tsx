@@ -5,10 +5,10 @@ import { useState } from 'react'
 
 const navLinks = [
   { label: 'Home', href: '/' },
-  { label: 'Ideas', href: '/ideas' },
-  { label: 'Playbooks', href: '/playbooks' },
-  { label: 'Make Money', href: '/make-money' },
-  { label: 'Startups', href: '/startups' },
+  { label: 'Ideas', href: '/category/business-ideas' },
+  { label: 'Playbooks', href: '/category/startup-playbooks' },
+  { label: 'Make Money', href: '/category/make-money' },
+  { label: 'Startups', href: '/category/african-startups' },
   { label: 'Opportunities', href: '/opportunities' },
 ]
 

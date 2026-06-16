@@ -10,6 +10,8 @@ import {
   Tag,
   Users,
   Trophy,
+  Mail,
+  Rss,
   LogOut,
   Menu,
   X,
@@ -21,6 +23,8 @@ const navItems = [
   { label: 'Categories', href: '/admin/categories', icon: Tag },
   { label: 'Authors', href: '/admin/authors', icon: Users },
   { label: 'Opportunities', href: '/admin/opportunities', icon: Trophy },
+  { label: 'Subscribers', href: '/admin/subscribers', icon: Rss },
+  { label: 'Messages', href: '/admin/messages', icon: Mail },
 ]
 
 export default function AdminLayout({
