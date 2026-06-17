@@ -121,20 +121,21 @@ export default function OpportunitiesPage() {
                   className="border-b border-gray-50 hover:bg-gray-50 transition-colors"
                 >
                   <td className="px-5 py-4">
-                    <p className="text-sm font-medium text-gray-900 line-clamp-1">
-                      {opp.title}
-                    </p>
-                    {opp.link && (
-                      
-                        href={opp.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs text-blue-500 hover:underline mt-0.5 inline-block"
-                      >
-                        View link
-                      </a>
-                    )}
-                  </td>
+  <p className="text-sm font-medium text-gray-900 line-clamp-1">
+    {opp.title}
+  </p>
+
+  {opp.link && (
+    <a
+      href={opp.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-xs text-blue-500 hover:underline mt-0.5 inline-block"
+    >
+      View link
+    </a>
+  )}
+</td>
                   <td className="px-5 py-4 hidden md:table-cell">
                     {opp.type && (
                       <span
