@@ -62,9 +62,7 @@ export default function OpportunitiesPage() {
       <div className="flex items-center justify-between mb-8">
         <div>
           <h1 className="text-2xl font-bold text-gray-900">Opportunities</h1>
-          <p className="text-gray-500 text-sm mt-1">
-            Manage grants, fellowships and competitions
-          </p>
+          <p className="text-gray-500 text-sm mt-1">Manage grants, fellowships and competitions</p>
         </div>
         <Link
           href="/admin/opportunities/new"
@@ -97,50 +95,34 @@ export default function OpportunitiesPage() {
           <table className="w-full">
             <thead>
               <tr className="border-b border-gray-100 bg-gray-50">
-                <th className="text-left text-xs font-medium text-gray-500 px-5 py-3">
-                  Title
-                </th>
-                <th className="text-left text-xs font-medium text-gray-500 px-5 py-3 hidden md:table-cell">
-                  Type
-                </th>
-                <th className="text-left text-xs font-medium text-gray-500 px-5 py-3 hidden md:table-cell">
-                  Country
-                </th>
-                <th className="text-left text-xs font-medium text-gray-500 px-5 py-3 hidden md:table-cell">
-                  Deadline
-                </th>
-                <th className="text-right text-xs font-medium text-gray-500 px-5 py-3">
-                  Actions
-                </th>
+                <th className="text-left text-xs font-medium text-gray-500 px-5 py-3">Title</th>
+                <th className="text-left text-xs font-medium text-gray-500 px-5 py-3 hidden md:table-cell">Type</th>
+                <th className="text-left text-xs font-medium text-gray-500 px-5 py-3 hidden md:table-cell">Country</th>
+                <th className="text-left text-xs font-medium text-gray-500 px-5 py-3 hidden md:table-cell">Deadline</th>
+                <th className="text-right text-xs font-medium text-gray-500 px-5 py-3">Actions</th>
               </tr>
             </thead>
             <tbody>
               {opportunities.map((opp) => (
-                <tr
-                  key={opp.id}
-                  className="border-b border-gray-50 hover:bg-gray-50 transition-colors"
-                >
+                <tr key={opp.id} className="border-b border-gray-50 hover:bg-gray-50 transition-colors">
                   <td className="px-5 py-4">
-  <p className="text-sm font-medium text-gray-900 line-clamp-1">
-    {opp.title}
-  </p>
-
-  {opp.link && (
-    <a
-      href={opp.link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-xs text-blue-500 hover:underline mt-0.5 inline-block"
-    >
-      View link
-    </a>
-  )}
-</td>
+                    <p className="text-sm font-medium text-gray-900 line-clamp-1">
+                      {opp.title}
+                    </p>
+                    {opp.link && (
+                      <a
+                        href={opp.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-blue-500 hover:underline mt-0.5 inline-block"
+                      >
+                        View link
+                      </a>
+                    )}
+                  </td>
                   <td className="px-5 py-4 hidden md:table-cell">
                     {opp.type && (
-                      <span
-                        className={`text-xs font-medium px-2.5 py-1 rounded-full capitalize ${typeBadge(opp.type)}`}
-                      >
+                      <span className={`text-xs font-medium px-2.5 py-1 rounded-full capitalize ${typeBadge(opp.type)}`}>
                         {opp.type}
                       </span>
                     )}
