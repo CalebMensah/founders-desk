@@ -1,3 +1,5 @@
+'use client'
+
 export default function PrivacyPage() {
   return (
     <div className="min-h-screen bg-[#F8FAFC]">
