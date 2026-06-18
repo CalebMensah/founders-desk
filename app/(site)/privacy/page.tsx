@@ -16,8 +16,8 @@ export default function PrivacyPage() {
 
       <div className="max-w-3xl mx-auto px-6 py-14">
         <div className="bg-white rounded-2xl border border-gray-100 p-8 md:p-10">
-          <div className="prose prose-gray max-w-none prose-headings:font-bold prose-headings:text-gray-900 prose-p:text-gray-600 prose-p:leading-relaxed">
 
+          <div className="prose prose-gray max-w-none prose-headings:font-bold prose-headings:text-gray-900 prose-p:text-gray-600 prose-p:leading-relaxed">
             <h2>1. Information we collect</h2>
             <p>
               We collect information you provide directly to us, such as your email address when you subscribe to our newsletter or contact us through our contact form. We also collect your name and message content when you reach out to us.
